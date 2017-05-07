@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="TJUPT,PT,校园,信网协会,天外天,资源,IPv6" />
+    <meta name="description" content="TJUPT是天津市首个、全国前列的校园Private Tracker，建立于2010年，由天津大学信网协会和天外天共同开发的，旨在为大家建立一个更好的资源共享环境，提高资源水准" />
+    <meta name="generator" content="NexusPHP" />
+    <title>北洋园PT</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="search" type="application/opensearchdescription+xml" title="北洋园PT Torrents" href="opensearch.php" />
+    <style type="text/css">
+        body {
+            background-color: #ddd;
+            font-family: "Helvetica Neue", "Hiragino Sans GB", Helvetica, Arial, sans-serif;
+            text-align: center;}
+        h1 {
+            font-size: 8em;
+            color: #fff;
+            margin: 0;
+        }
+        .text{
+            color: #555;
+        }
+        .row1{
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .row2{
+            font-size: 1em;
+        }
+        .newmedia{
+            vertical-align:middle;
+            text-align: center;
+            width: 120px;
+            height: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: calc(50% - 60px );
+        }
+        .weibo, .wechat{
+            height: 40px;
+            width: 40px;
+        }
+        .weibo{
+            background:url(sina.png) no-repeat center;
+            float: left;
+            margin-right: 40px;
+        }
+        .wechat{
+            background:url(wechat.png) no-repeat center;
+            float: left;
+            cursor: pointer;
+        }
+        #qrcode {
+            /*visibility: hidden;*/
+            height: 0;
+            width: 150px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease-in-out 0.2s;
+        }
+        #code_text {
+            transition: all 0.2s ease-in-out 0.3s;
+        }
+        
+    </style>
+    <script type="text/javascript">
+        function clickcode()
+        {
+            if(document.getElementById("qrcode").style.height=='150px')
+                {
+                    document.getElementById("qrcode").style.height='0'
+                    document.getElementById("code_text").style.opacity='0'}
+            else
+                {
+                    document.getElementById("qrcode").style.height='150px'
+                    document.getElementById("code_text").style.opacity='1'}
+        }
+    </script>
+</head>
+<body>
+    <h1>502</h1>
+    <div class="text row1">北洋媛正在休整中  请稍后再来吧</div>
+    <div class="text row2">不如看看我们的社交网络<br>北洋媛休息好了会通知大家的~</div>
+    <div class="newmedia">        
+        <a title="新浪微博" class="weibo" href="http://weibo.com/tjupt"></a>
+        <!--<li><a href="http://page.renren.com/601396265">人人网</a></li>-->
+        <div title="微信公众号" class="wechat" onclick="clickcode()"></div>
+        <div class="clear" style="clear:both"></div>
+        <div style="display:none">技术菌们表示由衷的抱歉...</div>
+    </div>
+    <div><img id="qrcode" src="qrcode.png"></div>
+    <div class="text" id="code_text" style="opacity: 0">扫码关注北洋媛微信公众号</div>
+</body>
+</html>
